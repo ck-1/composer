@@ -13,3 +13,4 @@ Vagrantfile
 .coverage
 .kitchen
 .kitchen.local.yml
+/.idea/
