@@ -29,16 +29,15 @@ end
 def make_execute(cmd)
   dev = new_resource.dev ? '--dev' : '--no-dev'
 
-  verbose = ''
   case new_resource.verbose
   when true
     verbose = '-v'
-  end
   when "very"
     verbose = '-vv'
-  end
   when "veryvery"
     verbose = '-vvv'
+  else
+    verbose = ''
   end
 
   quiet = new_resource.quiet ? '--quiet' : ''
