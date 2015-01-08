@@ -11,6 +11,7 @@ default_action :install
 attribute :project_dir, :kind_of => String, :name_attribute => true
 attribute :dev, :kind_of => [TrueClass, FalseClass], :default => false
 attribute :quiet, :kind_of => [TrueClass, FalseClass], :default => true
+attribute :verbose, :kind_of => [TrueClass, FalseClass, String], :default => false
 attribute :optimize_autoloader, :kind_of => [TrueClass, FalseClass], :default => false
 attribute :prefer_dist, :kind_of => [TrueClass, FalseClass], :default => false
 attribute :user, :kind_of => String, :default => 'root'
